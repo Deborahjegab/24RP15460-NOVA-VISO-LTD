@@ -69,7 +69,7 @@
 
 <?php
 if(isset($_POST['login'])) {
-    $conn = new mysqli("localhost", "root", "", "24rp15460-health");
+    $conn = new mysqli("localhost", "root", "", "24rp15460_shareide_db");
     $stmt = $conn->prepare("SELECT user_password FROM tbl_users WHERE user_email = ?");
     $stmt->bind_param("s", $_POST['email']);
     $stmt->execute();
@@ -77,8 +77,8 @@ if(isset($_POST['login'])) {
     $stmt->fetch();
 
     if(password_verify($_POST['password'], $hashed_password)) {
-        echo "<script>alert('Login Successful!'); window.location.href='index.php';</script>";
-        echo "<script>alert('Login Successful!'); window.location.href='index.php';</script>";
+        echo "<script>alert('Well Logged In '); window.location.href='index.php';</script>";
+        echo "<script>alert('Well Logged In'); window.location.href='index.php';</script>";
     } else {
         echo "<script>alert('Invalid Credentials!');</script>";
     }

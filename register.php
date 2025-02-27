@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register - HEALTHRWANDA</title>
+    <title>Register - NOVA VISO LTD</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -86,8 +86,8 @@
 
 <?php
 if(isset($_POST['register'])) {
-    $conn = new mysqli("localhost", "root", "", "24rp15460-health");
-    $conn = new mysqli("localhost", "root", "", "24rp15460-health");
+    $conn = new mysqli("localhost", "root", "", "24rp15460_shareide_db");
+    $conn = new mysqli("localhost", "root", "", "24rp15460_shareide_db");
     // Check for errors
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);

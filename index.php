@@ -77,7 +77,7 @@
 <body>
 
     <div class="container">
-        <h1>Welcome to Our Website</h1>
+        <h1>Welcome to NOVA VISO LTD Website</h1>
         <a href="login.php" class="btn btn-login">Login</a>
         <a href="register.php" class="btn btn-register">Register</a>
     </div>
