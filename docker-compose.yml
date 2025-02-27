@@ -1,0 +1,16 @@
+services:
+  ishimwe-php:
+    build:
+      context: ./  
+
+    container_name: ishimwe-php
+    ports:
+      - "8083:80"  # Exposing port 80 inside the container to port 8080 on the host
+    volumes:
+      - .C:/xampp/htdocs/deborah_24RP15460:/var/www/html  # Mount the current directory to /var/www/html inside the container
+    networks:
+      - webnet
+
+networks:
+  webnet:
+    driver: bridge
