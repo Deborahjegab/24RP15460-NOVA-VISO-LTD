@@ -1,13 +1,13 @@
 services:
-  ishimwe-php:
+  24rp15460-php:
     build:
       context: ./  
 
-    container_name: ishimwe-php
+    container_name: 24rp15460-php
     ports:
       - "8083:80"  # Exposing port 80 inside the container to port 8080 on the host
     volumes:
-      - .C:/xampp/htdocs/deborah_24RP15460:/var/www/html  # Mount the current directory to /var/www/html inside the container
+      - .C:/xampp/htdocs/24RP15460_LOGIN_REGISTER_MODULE:/var/www/html  # Mount the current directory to /var/www/html inside the container
     networks:
       - webnet
 
